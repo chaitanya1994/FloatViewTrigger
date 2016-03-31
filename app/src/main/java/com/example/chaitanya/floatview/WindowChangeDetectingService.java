@@ -39,7 +39,7 @@ public class WindowChangeDetectingService extends AccessibilityService {
             ActivityInfo activityInfo = tryGetActivity(componentName);
             boolean isActivity = activityInfo != null;
             if (isActivity)
-                if(componentName.flattenToShortString().contains("com.akosha.landing.LandingActivity")){
+                if(componentName.flattenToShortString().contains("ACTIVITY_NAME")){
                     startService(new Intent(this, FloatingService.class));
                 }
                 Log.i("CurrentActivity", componentName.flattenToShortString());
