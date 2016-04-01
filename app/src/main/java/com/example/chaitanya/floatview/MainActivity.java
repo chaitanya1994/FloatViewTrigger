@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.start_button);
         button.setOnClickListener(this);
-        intent = new Intent(this, WindowChangeDetectingService.class);
+        intent = new Intent(this, ProcessService.class);
     }
 
     @Override
